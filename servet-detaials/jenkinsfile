@@ -32,6 +32,16 @@ pipeline {
                 df -h
                 '''
             }
-        }       
+        }
+        stage ('current-process-running') {
+            steps{
+                sh '''
+                echo "current process running 5th stage"
+                ps -ef | head
+                '''
+
+            }
+        }    
     }
+
 }
