@@ -1,6 +1,7 @@
 pipeline {
     agent {
-        lable 'dev'
+        label 'dev'
+        }
     }
 
     stages {
@@ -10,4 +11,3 @@ pipeline {
             }    
         }
     }
-}
